@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    android:orientation="vertical"
+    tools:context="com.android.example.musicalstructure.SongDetail">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        style="@style/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:title="ActionBar title" />
+
+    <ImageView
+        android:id="@+id/detail_album_art"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        tools:title="album art" />
+
+    <TextView
+        android:id="@+id/details_song_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"
+        tools:title="main textview" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="Play"
+        />
+
+    <Button
+        android:id="@+id/pauseButton"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="Pause"
+        />
+
+</LinearLayout>

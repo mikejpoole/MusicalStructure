@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreyMedium"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_card_height"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardBackgroundColor="@color/colorPrimaryLight"
+        card_view:cardCornerRadius="16dp"
+        card_view:cardElevation="8dp"
+        android:onClick="openSongDetails"
+        >
+
+        <com.android.example.musicalstructure.AspectRatioImageView
+            android:id="@+id/album_art"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/album_cover" />
+
+        <RelativeLayout
+            android:id="@+id/song_title_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="150dp"
+            android:background="@color/transparentWhite"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/song_title"
+                style="@style/listSongTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Song Title" />
+
+            <TextView
+                android:id="@+id/artist_name"
+                style="@style/listArtistText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/song_title"
+                tools:text="Artist Name" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

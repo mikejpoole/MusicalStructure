@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Musical Structure</string>
+    <string name="album_cover">Album Cover</string>
+
+    <string name="action_back">Go Back</string>
+    <string name="action_favourite">Favourite</string>
+    <string name="action_settings">Settings</string>
+</resources>
